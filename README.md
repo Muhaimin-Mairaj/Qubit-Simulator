@@ -10,7 +10,7 @@ The simulation must be at-least optimized enough to be able to simulate single-d
 
 ### Classes / Structure
 
-* [ ] `Complex`: a class to store complex number
+* [x] `Complex`: a class to store complex number
 * [ ] `QubitRegister`: Manages a Qubit-Register, and stores the state vector for that Qubit. 
 * [ ] `Gate`: An abstract class for gates, it must have a pure virtual function for `apply()`.
   * [ ] `HadmardGate`
@@ -29,7 +29,7 @@ The simulation must be at-least optimized enough to be able to simulate single-d
 
 * Clone this repostory: ``` git clone https://github.com/Muhaimin-Mairaj/Qubit-Simulator.git ``` 
 * Navigate to the Project directory: ``` cd Qubit-Simulator ```
-* Create a build directory: ``` cd build && cd build ```
+* Create a build directory: ``` mkdir build && cd build ```
 * Generate the build system: ``` cmake .. ```
 * Compile the code: ``` cmake --build . ```
 * Run the executable,
