@@ -10,10 +10,13 @@ class QubitRegister {
     private:
     int numOfQubits;
     StateVector state;
+    void normalize();
 
     public:
     QubitRegister();
     QubitRegister(int size);
+    void randomize();
+    friend std::ostream & operator<<(std::ostream & out, const QubitRegister & other);
 };
 
 #endif
