@@ -31,12 +31,12 @@ void Circuit::addGate (char type, int control, int target) {
 }
 
 void Circuit::execute () {
-    std::cout << "State Vector before execution:\n" << *QRegister << "\n";
+    std::cout << "\nState Vector before execution:\n" << *QRegister << "\n";
 
     for (int i = 0; i < this->factory->getNumOfGates(); i++) {
         this->factory->execute(QRegister, i);
 
-        std::cout << "State Vector after execution step " << i + 1 << ":\n" << *QRegister << "\n";
+        // std::cout << "State Vector after execution step " << i + 1 << ":\n" << *QRegister << "\n";
     }
 }
 
